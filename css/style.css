@@ -1,0 +1,329 @@
+/* -- Обнуление -- */
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {text-decoration: none;}
+ul,ol,li {list-style: none;}
+h1,h2,h3,h4,h5,h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+/* ------------ */
+html,
+body {
+	height: 100%;
+	line-height: 1;
+}
+body{
+	font-family: 'Montserrat';
+	color: #FFFFFF;
+}
+.wrapper {
+	display: flex;
+	overflow: hidden;
+	flex-direction: column;
+	min-height: 100%;
+}
+.main {
+	flex: 1 1 auto;
+	padding: 65px 0px 0px 0px;
+	
+}
+.main-shadow{
+	z-index: -1;
+	background-color: #1B1B1B;
+}
+.main-shadow__container_3{
+	background: url(../img/фон.png) no-repeat center / cover;
+}
+.main-shadow-img__container_3{
+	position: relative;
+	background-color: rgba(0,0,0,0.7);
+	min-height: 905px;
+	width: 100%;
+}
+[class*="__container_1"] {
+	max-width: 1310px;
+	margin: 0px auto;
+}
+[class*="__container_3"] {
+	max-width: 1440px;
+	margin: 0 auto; 
+}
+
+/* ---- Шапка ---- */
+.header { 
+	position: absolute;
+	width: 100vw;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	background: #1B1B1B;
+}
+.header__container_1 {
+	display: flex;
+	min-height: 65px;
+	align-items: center;
+	justify-content: space-between;
+}
+.header__logo {
+	font-family: 'Alegreya Sans SC';
+	font-size: 35px;	
+}
+.menu__list {
+	display: flex;
+	align-items: center;
+}
+.menu__item {
+	padding: 0px 0px 0px 65px;	
+}
+.menu__link {
+	font-size: 25px;
+	color: #FFFFFF;
+	transition: color 0.1es ease 0s;
+}
+.menu__link:hover{
+	text-decoration: none;
+	color: #EC6933;
+}
+.icon-main_1{
+	margin: 0px 0px 0px 30px;
+}
+/* ---- Осноная часть ----- */
+
+.main__connect {
+	color: #FFFFFF;
+}
+.main__container_1 {
+	display: flex;
+	justify-content: space-between;
+}
+.main__rapair {
+	padding: 200px 0px;
+	display: flex;
+	flex-direction: column;
+	
+}
+.rapair-main {
+	text-align: start;
+}
+.rapair-main__title {
+	font-weight: 900;
+	font-size: 55px;
+	letter-spacing: 3px;
+	margin:0px 0px 15px 0px;
+}
+.rapair-main__text {
+	font-weight: 700;
+	font-size: 35px;
+	margin: 0px 0px 30px 0px;
+}
+.numbers-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 500;
+	font-size: 30px;
+}
+.numbers-main a{
+	color: #FFFFFF;
+}
+.numbers-main span{
+	padding: 0px 0px 0px 30px;
+}
+.numbers-main_1 {
+	text-decoration: none;
+	border: 4px solid #FFFFFF;
+	padding: 25px 50px;
+	margin: 0px 0px 25px 0px;
+}
+.numbers-main_2 {
+	background: #EC6933;
+	border: 4px solid #EC6933;
+	padding: 25px 50px;
+}
+.form__call {
+	padding: 0px 33px 100px 0px;
+	display: flex;
+	align-items: flex-end;
+}
+.call-form {
+	height: 606px;
+	width: 612px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #FFFFFF;
+}
+.call-form__title {
+	color: black;
+	font-weight: 700;
+	font-size: 35px;
+	margin: 0px 0px -20px 0px;
+}
+.order__form:not(:last-child) {
+	padding: 0px 0px 27px;
+}
+.order__name {
+	font-weight: 300;
+	font-size: 28px;
+	color: #515151;
+	margin: 0px 0px 3px 0px;
+}
+.order__field {
+	width: 455px;
+	height: 60px;
+	border: 1.5px solid #9F9F9F;
+	padding: 10px;
+	font-size: 30px;
+	font-family: 'Montserrat' ;
+}
+.order__field:focus{
+	box-shadow:  2px 2px 10px #1B1B1B ;
+}
+.form__button {
+	padding: 15px 35px;
+	text-align: center;
+	width: 343px;
+	height: 75px;
+	background-color: #EC6933;
+	transition: background-color 0.1es ease 0s;
+
+}
+.button {
+	font-weight: 500;
+	font-size: 35px;
+	color: #FFFFFF;
+}
+.form__button:hover{
+	background-color: #cc460c;
+}
+
+/* ----------- */
+
+.service {
+	background-color: #EC6933;
+	padding: 75px 200px;
+}
+.service__title {
+	text-align: center;
+	margin: 0px 0px 95px 0px;
+	font-weight: 700;
+	font-size: 45px;
+}
+.service__row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -8px;
+}
+.service__columns {
+	flex: 1 1 50%;
+	padding: 0px -8px;
+	margin: 0px 0px 50px 0px;
+}
+
+.item__row {
+	display: flex;
+	padding: 0px 0px 0px 140px;
+}
+.item__image {
+	flex: 0 0 70px;
+}
+.item__body {
+	padding: 0px 0px 0px 30px;
+	flex: 1 1 auto;
+}
+.item__title {
+	font-weight: 700;
+	font-size: 35px;
+	margin: 0px 0px 10px 0px;
+}
+.item__text {
+	max-width: 300px;
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 30px;
+}
+
+/* --- О нас --- */
+.main__our {
+	background-color: #E5E5E5;
+	color: #000000;
+}
+.our__container_1 {
+	padding: 60px 0px;
+}
+.our__title {
+	font-weight: 700;
+	font-size: 50px;
+	text-align: center;
+	margin: 0px 0px 20px 0px;
+}
+.our__text {
+	font-weight: 500;
+	font-size: 35px;
+	line-height: 43px;
+	margin: 0px 0px 20px 0px;
+}
+.our__text p{
+	margin: 30px 0px 30px 0px;
+}
+.our__footer {
+	font-weight: 300;
+	font-size: 30px;
+	text-align: center;
+}
+
+/* -------------- */
+
+.footer {
+	background-color: #1B1B1B;
+	color: #FFFFFF;
+}
+.footer__container_1 {
+	display: flex;
+	align-items: center;
+	padding: 35px 0px;
+}
+.support__img {
+	margin: 0px 0px 10px 0px;
+}
+.support__text_1 {
+	font-weight: 500;
+	font-size: 18px;
+	margin: 0px 0px 10px 0px;
+}
+.support__text_2 {
+	font-weight: 300;
+	font-size: 18px;
+}
+.text{
+	margin: 0px 0px 10px 0px;
+}
+.support__fixlock {
+	padding: 10px 0px 0px 145px;
+	max-width: 400px;
+	min-height: 300px;
+}
+.support__logo {
+	font-family: 'Alegreya Sans SC';
+	font-weight: 500;
+	font-size: 35px;
+	margin: 0px 0px 20px 0px;
+}
+.support__inf {
+	font-weight: 300;
+	font-size: 27px;
+}
+.support__inf a{
+	color: #FFFFFF;
+}
